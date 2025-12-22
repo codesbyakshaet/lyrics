@@ -1,0 +1,92 @@
+:root {
+  --theme-color: #ff4b6e;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at bottom, #1b2735, #090a0f);
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Center class for body */
+.center {
+  text-align: center;
+}
+
+/* Heart in a circle */
+.heart-circle {
+  width: 150px;
+  height: 150px;
+  border: 4px solid rgba(255, 75, 110, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.heart {
+  font-size: 60px;
+  animation: floatHeart 2s ease-in-out infinite;
+}
+
+/* Heart floating animation */
+@keyframes floatHeart {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.1); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Circle pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Heading (text) styling */
+.fade-in {
+  font-size: clamp(36px, 8vw, 72px); /* larger font size */
+  animation: fadeInText 2s ease forwards;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+  opacity: 1; /* stay visible */
+}
+
+/* Simple fade-in animation (text does NOT vanish) */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Button style */
+.heart-btn {
+  font-size: 1.8rem;
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255,75,110,0.6);
+  transition: all 0.3s ease;
+}
+
+.heart-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(255,75,110,0.8);
+}
