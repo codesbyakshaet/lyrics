@@ -11,6 +11,7 @@ const messages = [
   { text: "Vaada hai mera main hoon tere liye", start: 23000, end: 27000 },
   { text: "Hona kabhi tu judaa", start: 27000, end: 30000 },
   { text: "Aaaa" , start: 30000, end: 33000 }
+  { text: "ig: @akshat_shukla__9108" , start: 33000, end: 35000 }
 ];
 
 const container = document.querySelector(".lyrics-container");
@@ -116,3 +117,4 @@ function animateStars() {
   requestAnimationFrame(animateStars); 
 }
 animateStars();
+
