@@ -25,6 +25,8 @@ const messages = [
 
   { text: "This was for you Siya❤️" , start: 30000, end: 33000 }
 
+  { text: "Happiest Birthday Siya🎂🥳🫂❤️" , start: 30000, end: 33000 }
+
 ];
 
 
@@ -234,3 +236,4 @@ function animateStars() {
 }
 
 animateStars();
+
