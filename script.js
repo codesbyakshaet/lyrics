@@ -23,9 +23,9 @@ const messages = [
 
   { text: "Hona kabhi tu judaa", start: 27000, end: 30000 },
 
-  { text: "This was for you Siya❤️" , start: 30000, end: 33000 }
+  { text: "This was for you Siya❤️" , start: 30000, end: 33000 },
 
-  { text: "Happiest Birthday Siya🎂🥳🫂❤️" , start: 30000, end: 33000 }
+  { text: "Happiest Birthday Siya🎂🥳🫂❤️" , start: 33000, end: 35000 }
 
 ];
 
@@ -236,4 +236,5 @@ function animateStars() {
 }
 
 animateStars();
+
 
