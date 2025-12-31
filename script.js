@@ -46,7 +46,7 @@ const messages = [
 
 
 
-  { text: "This was for you Siya, Happiest Birthday Siyaa" , start: 30000, end: 33000 }
+  { text: "This was for you Siya👀" , start: 30000, end: 33000 }
 
 
 
@@ -467,3 +467,4 @@ function animateStars() {
 
 
 animateStars();
+
